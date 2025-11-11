@@ -1,0 +1,32 @@
+---
+whiskers:
+  version: "^2.3.0"
+  matrix:
+    - flavor
+  filename: "themes/{{flavor.identifier}}/catppuccin.json"
+  hex_format: "#{{r}}{{g}}{{b}}"
+---
+
+{%- set diffAdded = green | mix(color=base, amount=0.4) -%}
+{%- set diffRemoved = red | mix(color=base, amount=0.4) -%}
+{%- set diffModified = blue | mix(color=base, amount=0.4) -%}
+
+{
+  "name": "Catppuccin {{flavor.name}}",
+  "type": "custom",
+  "Background": "{{base.hex}}",
+  "Foreground": "{{text.hex}}",
+  "LightBlue": "{{sky.hex}}",
+  "AccentBlue": "{{blue.hex}}",
+  "AccentPurple": "{{mauve.hex}}",
+  "AccentCyan": "{{teal.hex}}",
+  "AccentGreen": "{{green.hex}}",
+  "AccentYellow": "{{yellow.hex}}",
+  "AccentRed": "{{red.hex}}",
+  "Comment": "{{overlay2.hex}}",
+  "Gray": "{{overlay1.hex}}",
+  "DiffAdded": "{{diffAdded.hex}}",
+  "DiffRemoved": "{{diffRemoved.hex}}",
+  "DiffModified": "{{diffModified.hex}}",
+  "GradientColors": ["{{blue.hex}}", "{{mauve.hex}}", "{{red.hex}}"]
+}
