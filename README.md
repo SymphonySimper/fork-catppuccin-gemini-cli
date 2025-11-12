@@ -36,20 +36,20 @@
 
 ## Usage
 
-1. Download the flavor file for your wanted theme
+1. Under [themes/](./themes), download the flavor file for your desired theme
 1. Move it to a persistent place under your home directory
-1. Add or edit the theme field in the `settings.json`:
+1. In the [Gemini CLI configuration](https://geminicli.com/docs/get-started/configuration/#settings-files), set the `theme` field under `ui` to the location of the theme file.
 	```json
 	"ui": {
-		"theme": "/path/to/your/flavor/catppuccin.json"
+		"theme": "/path/to/your/theme/catppuccin-mocha.json"
 	}
 	```
-1. Reload Gemini CLI if running
+1. Reload Gemini CLI if it is running
 
 ## Notes
 
-When contributing to this repository, keep the colors consistent with
-the [Google Gemini web app port](https://github.com/catppuccin/userstyles/tree/main/styles/google-gemini).
+When contributing to this repository, try to keep the colors in sync with
+the [Google Gemini userstyle](https://github.com/catppuccin/userstyles/tree/main/styles/google-gemini).
 
 <!-- The FAQ section is optional. Remove if needed.-->
 <!-- ## 🙋 FAQ
